@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF"
+    tools:context=".ShareEditActivity">
+
+    <!-- 顶部导航栏 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="15dp">
+
+        <ImageView
+            android:id="@+id/backButton"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/baseline_arrow_back_ios_24" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="20dp"
+            android:text="发布动态"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/postButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发布"
+            android:textSize="16sp"
+            android:textColor="#FF4081"
+            android:padding="10dp" />
+    </LinearLayout>
+
+    <!-- 内容编辑区域 -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/contentEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="分享你的新鲜事..."
+                android:minHeight="120dp"
+                android:padding="15dp"
+                android:textSize="16sp" />
+
+            <!-- 图片选择区域 -->
+            <LinearLayout
+                android:id="@+id/imageContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:padding="5dp">
+
+                <ImageView
+                    android:id="@+id/addImageButton"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/add_image_background"
+                    android:gravity="center"
+                    android:src="@drawable/baseline_add_photo_alternate_24" />
+
+                <!-- 图片预览将动态添加到这里 -->
+            </LinearLayout>
+
+            <!-- 权限设置 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <CheckBox
+                    android:id="@+id/publicCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="公开"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/friendsCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="仅好友可见"
+                    android:textSize="14sp" />
+
+                <CheckBox
+                    android:id="@+id/privateCheckBox"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:text="仅自己可见"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

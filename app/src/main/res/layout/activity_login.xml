@@ -54,7 +54,7 @@
                 android:hint="请输入账号"
                 android:textSize="14sp"
                 android:layout_height="match_parent"
-                />
+                android:singleLine="true"/>
         </LinearLayout>
 
         <LinearLayout
@@ -79,7 +79,8 @@
                 android:background="@null"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
-                android:textSize="14sp" />
+                android:textSize="14sp"
+                android:singleLine="true"/>
 
         </LinearLayout>
 

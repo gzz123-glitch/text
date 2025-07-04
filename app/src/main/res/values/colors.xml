@@ -6,4 +6,5 @@
     <color name="yellow">#FFFFFF00</color>
     <color name="blue">#FF00FFFF</color>
     <color name="purple">#FF00FF</color>
+    <color name="item_selector">#6B6969</color>
 </resources>
