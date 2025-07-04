@@ -56,13 +56,8 @@
                 android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:hint="请输入用户名"
-<<<<<<< Updated upstream
                 android:textSize="14sp"
-                android:layout_height="match_parent"
                 android:singleLine="true"/>
-=======
-                android:singleLine="true"
-                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -88,34 +83,9 @@
                 android:hint="请输入手机号"
                 android:singleLine="true"
                 android:textSize="14sp" />
->>>>>>> Stashed changes
         </LinearLayout>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:layout_marginTop="10dp"
-            android:background="@color/white"
-            android:paddingLeft="10dp"
-            android:paddingRight="50dp">
 
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical"
-                android:src="@drawable/baseline_phone_24" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginLeft="10dp"
-                android:background="@null"
-                android:hint="请输入电话号码"
-                android:inputType="textPassword"
-                android:textSize="14sp"
-                android:singleLine="true"/>
-
-        </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
@@ -139,13 +109,8 @@
                 android:background="@null"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
-<<<<<<< Updated upstream
                 android:textSize="14sp"
                 android:singleLine="true"/>
-=======
-                android:singleLine="true"
-                android:textSize="14sp" />
->>>>>>> Stashed changes
         </LinearLayout>
 
         <LinearLayout
@@ -170,13 +135,8 @@
                 android:background="@null"
                 android:hint="请再次输入密码"
                 android:inputType="textPassword"
-<<<<<<< Updated upstream
                 android:textSize="14sp"
                 android:singleLine="true"/>
-=======
-                android:singleLine="true"
-                android:textSize="14sp" />
->>>>>>> Stashed changes
         </LinearLayout>
 
         <CheckBox
@@ -197,9 +157,5 @@
             android:padding="15dp"
             android:text="注册" />
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
     </LinearLayout>
 </LinearLayout>
