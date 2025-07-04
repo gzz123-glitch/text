@@ -1,9 +1,13 @@
 package com.example.home;
 
+<<<<<<< Updated upstream
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+=======
+import android.os.Bundle;
+>>>>>>> Stashed changes
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -18,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
         setContentView(R.layout.activity_main);
+<<<<<<< Updated upstream
         Button login = findViewById(R.id.login);
         Button main  = findViewById(R.id.main);
         Button share  = findViewById(R.id.share);
@@ -50,5 +55,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+=======
+>>>>>>> Stashed changes
     }
 }

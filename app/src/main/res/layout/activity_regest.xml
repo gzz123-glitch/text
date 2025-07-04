@@ -4,11 +4,12 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:background="@color/black"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".loginActivity"
-    android:orientation="vertical">
+    android:background="@color/black"
+    android:orientation="vertical"
+    tools:context=".regestActivity">
+
     <ImageView
         android:id="@+id/imageView2"
         android:layout_width="match_parent"
@@ -17,28 +18,30 @@
         android:contentDescription="@null"
         android:scaleType="centerInside"
         app:srcCompat="@drawable/image01" />
+
     <TextView
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
         android:layout_margin="10dp"
+        android:gravity="center"
+        android:text="注册"
         android:textColor="@color/white"
-        android:text="注册" />
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
     <LinearLayout
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:layout_margin="10dp"
-        android:orientation="vertical"
-        android:layout_height="wrap_content">
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="50dp"
             android:background="@color/white"
             android:paddingLeft="10dp"
-            android:paddingRight="50dp"
-            android:layout_height="50dp">
+            android:paddingRight="50dp">
 
             <ImageView
                 android:layout_width="wrap_content"
@@ -47,13 +50,19 @@
                 android:src="@drawable/baseline_man_24" />
 
             <EditText
+                android:id="@+id/etUsername"
                 android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:hint="请输入用户名"
+<<<<<<< Updated upstream
                 android:textSize="14sp"
                 android:layout_height="match_parent"
                 android:singleLine="true"/>
+=======
+                android:singleLine="true"
+                android:textSize="14sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +70,32 @@
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@color/white"
-            android:orientation="horizontal"
+            android:paddingLeft="10dp"
+            android:paddingRight="50dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/baseline_phone_24" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:background="@null"
+                android:hint="请输入手机号"
+                android:singleLine="true"
+                android:textSize="14sp" />
+>>>>>>> Stashed changes
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@color/white"
             android:paddingLeft="10dp"
             android:paddingRight="50dp">
 
@@ -98,21 +132,27 @@
                 android:src="@drawable/baseline_lock_24" />
 
             <EditText
+                android:id="@+id/etPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:hint="请输入密码"
                 android:inputType="textPassword"
+<<<<<<< Updated upstream
                 android:textSize="14sp"
                 android:singleLine="true"/>
+=======
+                android:singleLine="true"
+                android:textSize="14sp" />
+>>>>>>> Stashed changes
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="10dp"
             android:background="@color/white"
-            android:orientation="horizontal"
             android:paddingLeft="10dp"
             android:paddingRight="50dp">
 
@@ -123,32 +163,43 @@
                 android:src="@drawable/baseline_lock_24" />
 
             <EditText
+                android:id="@+id/etConfirmPassword"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="10dp"
                 android:background="@null"
                 android:hint="请再次输入密码"
                 android:inputType="textPassword"
+<<<<<<< Updated upstream
                 android:textSize="14sp"
                 android:singleLine="true"/>
+=======
+                android:singleLine="true"
+                android:textSize="14sp" />
+>>>>>>> Stashed changes
         </LinearLayout>
+
         <CheckBox
             android:id="@+id/checkBoxShowPassword"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical|left"
+            android:paddingStart="10dp"
             android:text="显示密码"
-            android:textColor="@color/white"
-            android:layout_gravity="start"
-            android:gravity="center_vertical"
-            android:paddingStart="0dp"
-            android:paddingTop="4dp"
-            android:paddingBottom="4dp"
-            android:layout_weight="1" />
+            android:textColor="@color/white" />
+
         <Button
             android:id="@+id/button"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
             android:text="注册" />
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
     </LinearLayout>
 </LinearLayout>
